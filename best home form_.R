@@ -16,3 +16,10 @@ ars_a <- filter(e18, AwayTeam=="Arsenal")
 sum (ars_h$FTHG - ars_h$FTAG) #26 more
   #and away?
 sum (ars_a$FTAG - ars_a$FTHG) #4 less
+
+#select non-gambling columns
+e18_no_g <- select(e18, Div:AR)
+
+#only home variables
+e18_h <- select(e18, starts_with('H'), -HTAG, Referee, FTR)
+colnames(e18_h)
