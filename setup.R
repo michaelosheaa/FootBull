@@ -8,4 +8,4 @@ e18<- read.csv("epl_season_1819.csv")
 #libraries
 library(tidyverse)
 library(magrittr)
-
+library("janitor")

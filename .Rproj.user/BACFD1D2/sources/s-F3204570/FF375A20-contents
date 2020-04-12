@@ -31,3 +31,7 @@ p <- e18 %>%
 p
 #refs seem fairly distributed across teams
 
+#shouldve done this immediately:
+e18 <- e18 %>%
+  clean_names()
+

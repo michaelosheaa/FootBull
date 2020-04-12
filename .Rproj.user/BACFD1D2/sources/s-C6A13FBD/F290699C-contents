@@ -1,7 +1,0 @@
-gi_fetch_templates("R")
-
-
-### R ###
-# History files
-.Rhistory
-.Rapp.history

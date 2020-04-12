@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1693955611",
+    "hash" : "0",
     "id" : "DAB8E543",
-    "lastKnownWriteTime" : 1586502209,
-    "last_content_update" : 1586502209685,
+    "lastKnownWriteTime" : 1586654207,
+    "last_content_update" : 1586654207324,
     "path" : "~/GitHub/FootBull/setup.R",
     "project_path" : "setup.R",
     "properties" : {
-        "cursorPosition" : "10,0",
+        "cursorPosition" : "11,0",
         "scrollLine" : "0"
     },
     "relative_order" : 2,
