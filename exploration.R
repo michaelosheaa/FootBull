@@ -35,3 +35,15 @@ p
 e18 <- e18 %>%
   clean_names()
 
+#referee and cards
+  #home team
+e18 %>%
+  group_by(referee) %>% 
+  summarise(hf = mean(hf), 
+            af = mean(af)) %>%
+  ungroup() %>%
+  mutate(home_pref = af-hf)
+  select(referee, hf, af, home_pref) %>%
+  arrange(desc(hf))
+# while East generally preferences the away team, Coote shows a home bias
+    # how to investigate this further...
