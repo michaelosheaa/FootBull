@@ -42,8 +42,12 @@ e18 %>%
   summarise(hf = mean(hf), 
             af = mean(af)) %>%
   ungroup() %>%
-  mutate(home_pref = af-hf)
+  mutate(home_pref = af-hf) %>%
   select(referee, hf, af, home_pref) %>%
-  arrange(desc(hf))
+  arrange(desc(home_pref))
 # while East generally preferences the away team, Coote shows a home bias
     # how to investigate this further...
+
+e18 %>%
+  filter(referee == "D Coote") %>%
+  select(home_team, hf, away_team, af)
